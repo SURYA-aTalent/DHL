@@ -1,0 +1,15 @@
+package com.dhl.dhltalentlinkapp.outbound.australiaexportdata;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dhl.dhltalentlinkapp.outbound.australiaexportdata.generated.GeneratedAustraliaexportdataController;
+
+/**
+ * REST controller logic
+ * <p>
+ * This file is safe to edit. It will not be overwritten by the code generator.
+ * 
+ * @author dhl
+ */
+@RestController
+public class AustraliaexportdataController extends GeneratedAustraliaexportdataController {}

@@ -1,0 +1,42 @@
+
+package com.mrted.ws.lovhierarchy;
+
+import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for recruitmentType.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>
+ * <pre>
+ * &lt;simpleType name="recruitmentType">
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="JOBP"/>
+ *     &lt;enumeration value="JOBC"/>
+ *     &lt;enumeration value="CONP"/>
+ *     &lt;enumeration value="CONC"/>
+ *   &lt;/restriction>
+ * &lt;/simpleType>
+ * </pre>
+ * 
+ */
+@XmlType(name = "recruitmentType")
+@XmlEnum
+public enum RecruitmentType {
+
+    JOBP,
+    JOBC,
+    CONP,
+    CONC;
+
+    public String value() {
+        return name();
+    }
+
+    public static RecruitmentType fromValue(String v) {
+        return valueOf(v);
+    }
+
+}

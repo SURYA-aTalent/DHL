@@ -1,0 +1,4 @@
+/target/
+*.md5
+*.settings/*
+/.classpath
